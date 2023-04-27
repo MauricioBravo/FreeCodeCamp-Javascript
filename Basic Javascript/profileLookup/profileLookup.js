@@ -34,13 +34,12 @@ function lookUpProfile(name, prop) {
       if(contacts[i].firstName ==name){
         return contacts[i][prop];
       }
-    }else if(!contacts[i].hasOwnProperty(prop)){
+    }else if(!contacts[i].hasOwnProperty(prop) && contacts[i].firstName ==name){
       return "No such property";
-    }else{
-      return "No such contact";
     }
   }
   }
+return "No such contact";
 
   // Only change code above this line
 }
@@ -54,13 +53,20 @@ lookUpProfile("Bob", "number");
 
 lookUpProfile("Akira", "address");
 
-
-
-for(let j=0;j<contacts[i].legth;j++){
-        if(contacts[i].firstName==name && contacts[i].hasOwnProperty(prop) ){
-            
-        }
+******
+for(let i=0;i<contacts.length;i++){
+    for(let j=0;j<4;j++){
+    if(contacts[i].hasOwnProperty(prop)){
+      if(contacts[i].firstName ==name){
+        return contacts[i][prop];
+      }
+    }else if(!contacts[i].hasOwnProperty(prop) && contacts[i].firstName ==name){
+      return "No such property";
     }
+  }
+  }
+return "No such contact";
+
 
 ***--*
 for(let i=0;i<contacts.length;i++){

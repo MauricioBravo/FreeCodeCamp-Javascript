@@ -28,6 +28,8 @@ const contacts = [
 
 function lookUpProfile(name, prop) {
   // Only change code below this line
+
+
   for(let i=0;i<contacts.length;i++){
     for(let j=0;j<4;j++){
     if(contacts[i].hasOwnProperty(prop)){
@@ -43,6 +45,8 @@ return "No such contact";
 
   // Only change code above this line
 }
+
+
 lookUpProfile("Kristian", "lastName");
 console.log(lookUpProfile("Bob", "potato")); 
 

@@ -1,19 +1,29 @@
-function palindrome(str) {
+//**** Use Destructuring Assignment to Assign Variables from Arrays ****
+let a = 8, b = 6;
+[a,b] = [b,a];
 
-    let string = str.toLowerCase();
 
-    const stringCorrected = string.replace();
-    console.log(stringCorrected);
+//   Destructuring via rest elements
 
-    return true;
+const [c, d, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(c, d);
+console.log(arr);
 
-}
 
-/*
-function allToLetters(string){
-    for(let i=0; i<string.lenght;i++){
-      if (string[i] == )
-    }
-*/
 
-palindrome("eye");
+let objetivo = 294;
+let avance =127 ;
+let porcentaje = (avance*100)/objetivo;
+console.log(porcentaje);
+
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
+  };
+  
+  const greeting = `Hello, my name is ${person.name}!
+  I am ${person.age} years old.`;
+  
+  console.log(greeting);
+
+

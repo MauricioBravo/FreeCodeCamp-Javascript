@@ -26,7 +26,7 @@ const person = {
   
   console.log(greeting);
 
-  
+
 /*      Create Strings using Template Literals        */
 
   const result = {
@@ -55,3 +55,19 @@ const person = {
     '<li class="text-warning">linebreak</li>'
   ]
   */
+
+  const createPerson = (name, age, gender) => {
+    // Only change code below this line
+    (name,
+    age,
+    gender)
+    // Only change code above this line
+  };
+
+
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
+  //{name: "Zodiac Hasbro", age: 56, gender: "male"}
+
+
+
+//video 21:07

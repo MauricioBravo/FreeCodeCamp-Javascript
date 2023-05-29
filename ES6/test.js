@@ -68,6 +68,11 @@ const person = {
 console.log(createPerson("Zodiac Hasbro", 56, "male"));
   //{name: "Zodiac Hasbro", age: 56, gender: "male"}
 
-
+  const number = 12345;
+  const digits = String(number)
+    .split('')
+    .map(Number);
+    
+  console.log(digits);
 
 //video 21:07

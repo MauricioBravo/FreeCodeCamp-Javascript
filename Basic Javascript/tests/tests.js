@@ -52,3 +52,11 @@ console.log(doubler(4));
 
 console.log(doubler(6));
 
+
+
+const faltan = 152;
+const hechos = 142;
+const totales = faltan + hechos;
+const porcentajeAvanzado = (hechos*100)/totales;
+console.log(totales);
+console.log(porcentajeAvanzado);

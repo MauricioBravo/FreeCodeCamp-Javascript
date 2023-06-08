@@ -1,4 +1,17 @@
 function telephoneCheck(str) {
+
+
+  const validUSPhone = /^(1[\s-]?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
+
+  return validUSPhone.test(str);
+
+}
+
+
+
+/*
+
+
 var valorLetras=true;
 var valorNumeros=true;
 var valorParentecis=true;
@@ -23,13 +36,13 @@ var valorGuiones=true;
     if(countNumbers(str2)==false){//
       valorNumeros= false;
     }
-/*
-    const reglaRegex = /^[A-Za-z0-9|\-|\(|\)]*$/;
-    console.log(str.match(reglaRegex));
-    if (str.match(reglaRegex)){
-      valor = true;
-    }
-*/
+          
+    // const reglaRegex = /^[A-Za-z0-9|\-|\(|\)]*$/;
+    // console.log(str.match(reglaRegex));
+    // if (str.match(reglaRegex)){
+    //   valor = true;
+    // }
+        
 //se revisa la apertura y cierre de parentesis
 valorParentecis=revisarParentecis(str);
 console.log(revisarParentecis(str));

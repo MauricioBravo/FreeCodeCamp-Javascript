@@ -57,7 +57,7 @@ Usernames can only use alpha-numeric characters.
 The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
 Username letters can be lowercase and uppercase.
 Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
-*/
+
 let username = "JackOfAllTrades";
 let userCheck =/^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
 let result = userCheck.test(username);
@@ -72,3 +72,31 @@ let result = userCheck.test(username);
 \d\d+ - following characters are 2 or more digits
 $ - end of input
 */
+
+
+
+// ************ VERIFICADOR DE PASSWORD **************
+
+// Use lookaheads in the pwRegex to match passwords that are greater than 5 
+//characters long, and have two consecutive digits.
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result3 = pwRegex.test(sampleWord);
+console.log(result3);
+
+/*
+Your regex should use two positive lookaheads.
+Your regex should not match the string astronaut
+Your regex should not match the string banan1
+Your regex should match the string bana12
+*/
+
+let repeatStr = "row row row 12 12 wau wau your boat";
+let repeatRegex = /(\w+) \1 (\d+) \2/;
+// repeatRegex.test(repeatStr); // Returns true
+console.log(repeatStr.match(repeatRegex)); // Returns ["row row row", "row"]
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^(\s*)(.+)(\s*)$/; 
+let result4 = hello.replace(wsRegex, "$2"); 
+console.log("my result = " + result) // prints Hello, World!

@@ -107,7 +107,7 @@ const refrigerator = {
         console.log(allUsers[usr].online);
       if(allUsers[usr].online == true ) {
         counter=counter +1;
-      }
+      }  
       
     }
     return counter;
@@ -115,3 +115,48 @@ const refrigerator = {
   }
   
   console.log(countOnline(users));
+
+
+  let user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+      username: 'kennethCodesAllDay',
+      joinDate: 'March 26, 2016',
+      organization: 'freeCodeCamp',
+      friends: [
+        'Sam',
+        'Kira',
+        'Tomo'
+      ],
+      location: {
+        city: 'San Francisco',
+        state: 'CA',
+        country: 'USA'
+      }
+    }
+  };
+  
+  function addFriend(userObj, friend) {
+    // Only change code below this line
+    console.log(userObj.data.friends);
+    userObj.data.friends.push(friend);
+    console.log(userObj.data.friends);
+    // Only change code above this line
+  }
+  
+  console.log(addFriend(user, 'Pete'));
+
+  function reverseString(str) {
+    var str2="";
+
+    for(let i=str.length-1; i>=0;i--){
+        console.log(str[i]);
+        str2+=str[i];
+        console.log(str2);
+    }
+    console.log(str2);
+    return str2;
+  }
+  
+  reverseString("hello");

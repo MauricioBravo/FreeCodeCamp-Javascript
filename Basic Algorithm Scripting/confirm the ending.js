@@ -27,8 +27,15 @@ function confirmEnding(str, target) {
         i++;
         j++;
     }
-return flag;
+    return flag;
 }
 
 // console.log(confirmEnding("Bastian", "n"));
 console.log(confirmEnding("Congratulation", "on"));
+
+for (let i = 0; i <= 2; i++) {
+    console.log(i);
+    for (let j = 0; j <= 3; j++) {
+        console.log(j);
+    }
+}
